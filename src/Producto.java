@@ -4,21 +4,30 @@ public class Producto {
 	private String nombre;
 	private String descripcion;
 	private String stock;
-	private String localizacion;
 	private String pasillo;
 	private String estanteria;
 	private String estante;
 	private String pendientes;
 	
+	@Override
+	public String toString() {
+		return ("codigo :"+codigo+"\n"+
+				"nombre :"+nombre+"\n"+
+				"descripcion :"+descripcion+"\n"+
+				"stock :"+stock+"\n"+
+				"pasillo :"+pasillo+"\n"+
+				"estanteria :"+estanteria+"\n"+
+				"estante :"+estante+"\n"+
+				"pendientes :"+pendientes+"\n");
+	}
 
-	public Producto(String codigo, String nombre, String descripcion, String stock, String localizacion, String pasillo,
+	public Producto(String codigo, String nombre, String descripcion, String stock, String pasillo,
 			String estanteria, String estante, String pendientes) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.stock = stock;
-		this.localizacion = localizacion;
 		this.pasillo = pasillo;
 		this.estanteria = estanteria;
 		this.estante = estante;
@@ -57,15 +66,6 @@ public class Producto {
 	public void setStock(String stock) {
 		this.stock = stock;
 	}
-
-
-	public String getLocalizacion() {
-		return localizacion;
-	}
-	public void setLocalizacion(String localizacion) {
-		this.localizacion = localizacion;
-	}
-
 
 	public String getPasillo() {
 		return pasillo;

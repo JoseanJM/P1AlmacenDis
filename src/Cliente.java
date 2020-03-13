@@ -1,28 +1,35 @@
 
-public class Clientes {
+public class Cliente {
 	private String nombre;
-	private String apellido1;
-	private String apellido2;
+	private String apellidos;
 	private String email;
 	private String telefono;
-	private String direccion;
 	private String calle;
 	private String numero;
 	private String codpostal;
 	private String poblacion;
 	private String pais;
 	
+	@Override
+	public String toString() {
+		return ("Nombre :"+nombre+"\n"+
+				"Apellidos :"+apellidos+"\n"+
+				"Email :"+email+"\n"+
+				"Teléfono :"+telefono+"\n"+
+				"Calle :"+calle+"\n"+
+				"Número :"+numero+"\n"+
+				"Código Postal :"+codpostal+"\n"+
+				"Poblacion :"+poblacion+"\n"+
+				"País :"+pais+"\n");
+	}	
 	
-	
-	public Clientes(String nombre, String apellido1, String apellido2, String email, String telefono, String direccion,
+	public Cliente(String nombre, String apellidos, String email, String telefono,
 			String calle, String numero, String codpostal, String poblacion, String pais) {
 		super();
 		this.nombre = nombre;
-		this.apellido1 = apellido1;
-		this.apellido2 = apellido2;
+		this.apellidos = apellidos;
 		this.email = email;
 		this.telefono = telefono;
-		this.direccion = direccion;
 		this.calle = calle;
 		this.numero = numero;
 		this.codpostal = codpostal;
@@ -41,18 +48,11 @@ public class Clientes {
 	}
 
 
-	public String getApellido1() {
-		return apellido1;
+	public String getApellidos() {
+		return apellidos;
 	}
-	public void setApellido1(String apellido1) {
-		this.apellido1 = apellido1;
-	}
-
-	public String getApellido2() {
-		return apellido2;
-	}
-	public void setApellido2(String apellido2) {
-		this.apellido2 = apellido2;
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
 	}
 
 
@@ -69,14 +69,6 @@ public class Clientes {
 	}
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
-	}
-
-
-	public String getDireccion() {
-		return direccion;
-	}
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
 	}
 
 
@@ -117,14 +109,6 @@ public class Clientes {
 	}
 	public void setPais(String pais) {
 		this.pais = pais;
-	}
-
-
-
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
