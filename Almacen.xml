@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8">
+<almacen>
+codigo :001
+nombre :pera
+descripcion :frutal
+stock :20
+pasillo :1
+estanteria :1
+estante :1
+pendientes :0
+codigo :manzana
+nombre :manzana
+descripcion :fruta
+stock :10
+pasillo :1
+estanteria :1
+estante :2
+pendientes :3
+codigo :003
+nombre :sandia
+descripcion :fruta
+stock :3
+pasillo :1
+estanteria :1
+estante :3
+pendientes :1
+Nombre :jose
+Apellidos :jimenez moran
+Email :joseanjmnz.22@gmail.com
+Teléfono :33525323
+Calle :ferraz
+Número :1
+Código Postal :28010
+Poblacion :madrid
+País :españa
+Nombre :ignacio
+Apellidos :pidal broncano
+Email :infojava@yahoo.es
+Teléfono :145324242
+Calle :princesa
+Número :111
+Código Postal :28010
+Poblacion :madrid
+País :españa
+Producto :manzana
+Cantidad :3
+Calle :ferraz
+Número :10
+Codigo Postal :28010
+Poblacion :madrid
+Código Pais :españa
+Destinatario :jose
+Fecha de entrega aprox :3 dias
+
+</almacen>

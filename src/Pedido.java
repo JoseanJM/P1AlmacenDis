@@ -38,12 +38,11 @@ public class Pedido {
 
 	//getters y setters
 	
-
+/*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	}
-
+*/
 	public String getProducto() {
 		return producto;
 	}

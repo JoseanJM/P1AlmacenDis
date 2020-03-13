@@ -130,7 +130,7 @@ public class Main {
 		Pedido pedido = new Pedido(producto,cantidad,calle,numero,codPostal,poblacion,pais,destinatario,fechaEntrega);
 		return pedido;
 	}
-	public  void writeToFile(String xml, String fileName) throws IOException {
+	public static  void writeToFile(String xml, String fileName) throws IOException {
 	    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
 	    try {
 			writer.write(xml);
@@ -142,7 +142,7 @@ public class Main {
 		}
 	}
 	
-	public  void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		
 		ArrayList<Producto> productos = new ArrayList<Producto>();
 		ArrayList<Cliente> clientes = new ArrayList<Cliente>();
@@ -187,9 +187,17 @@ public class Main {
 			xml += a;
 			System.out.println(xml);
 		}
+		for (Cliente b: clientes) {
+			xml += b;
+			System.out.println(xml);
+		}
+		for (Pedido c: pedidos) {
+			xml += c;
+			System.out.println(xml);
+		}
 		String close_root = "\n</almacen>";
 
 		xml += close_root;
-		writeToFile(xml, "xmlFile.xml");
+		writeToFile(xml, "Almacen.xml");
 	}
 }
