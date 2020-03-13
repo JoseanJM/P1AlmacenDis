@@ -1,7 +1,7 @@
 
 public class Producto {
 	private String codigo;
-	private String nombre;
+	private String nombreprod;
 	private String descripcion;
 	private String stock;
 	private String pasillo;
@@ -12,7 +12,7 @@ public class Producto {
 	@Override
 	public String toString() {
 		return ("codigo :"+codigo+"\n"+
-				"nombre :"+nombre+"\n"+
+				"nombre :"+nombreprod+"\n"+
 				"descripcion :"+descripcion+"\n"+
 				"stock :"+stock+"\n"+
 				"pasillo :"+pasillo+"\n"+
@@ -21,11 +21,11 @@ public class Producto {
 				"pendientes :"+pendientes+"\n");
 	}
 
-	public Producto(String codigo, String nombre, String descripcion, String stock, String pasillo,
+	public Producto(String codigo, String nombreprod, String descripcion, String stock, String pasillo,
 			String estanteria, String estante, String pendientes) {
 		super();
 		this.codigo = codigo;
-		this.nombre = nombre;
+		this.nombreprod = nombreprod;
 		this.descripcion = descripcion;
 		this.stock = stock;
 		this.pasillo = pasillo;
@@ -45,10 +45,10 @@ public class Producto {
 
 	
 	public String getNombre() {
-		return nombre;
+		return nombreprod;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombre(String nombreprod) {
+		this.nombreprod = nombreprod;
 	}
 
 

@@ -1,6 +1,6 @@
 
 public class Cliente {
-	private String nombre;
+	private String nombrecl;
 	private String apellidos;
 	private String email;
 	private String telefono;
@@ -12,7 +12,7 @@ public class Cliente {
 	
 	@Override
 	public String toString() {
-		return ("Nombre :"+nombre+"\n"+
+		return ("Nombre :"+nombrecl+"\n"+
 				"Apellidos :"+apellidos+"\n"+
 				"Email :"+email+"\n"+
 				"Teléfono :"+telefono+"\n"+
@@ -23,10 +23,10 @@ public class Cliente {
 				"País :"+pais+"\n");
 	}	
 	
-	public Cliente(String nombre, String apellidos, String email, String telefono,
+	public Cliente(String nombrecl, String apellidos, String email, String telefono,
 			String calle, String numero, String codpostal, String poblacion, String pais) {
 		super();
-		this.nombre = nombre;
+		this.nombrecl = nombrecl;
 		this.apellidos = apellidos;
 		this.email = email;
 		this.telefono = telefono;
@@ -41,10 +41,10 @@ public class Cliente {
 
 	//Getters y Setters
 	public String getNombre() {
-		return nombre;
+		return nombrecl;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombre(String nombrecl) {
+		this.nombrecl = nombrecl;
 	}
 
 

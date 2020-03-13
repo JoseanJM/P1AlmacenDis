@@ -1,8 +1,6 @@
-
-public class Pedidos {
-	private String productos;
+public class Pedido {
+	private String producto;
 	private String cantidad;
-	private String direccionEntrega;
 	private String calle;
 	private String numero;
 	private String codPostal;
@@ -11,14 +9,24 @@ public class Pedidos {
 	private String destinatario;
 	private String fechaEntrega;
 	
+	@Override
+	public String toString() {
+		return ("Producto :"+producto+"\n"+
+				"Cantidad :"+cantidad+"\n"+
+				"Calle :"+calle+"\n"+
+				"Número :"+numero+"\n"+
+				"Codigo Postal :"+codPostal+"\n"+
+				"Poblacion :"+poblacion+"\n"+
+				"Código Pais :"+pais+"\n"+
+				"Destinatario :"+destinatario+"\n"+
+				"Fecha de entrega aprox :"+fechaEntrega+"\n");
+	}
 	
-	
-	public Pedidos(String productos, String cantidad, String direccionEntrega, String calle, String numero,
+	public Pedido(String producto, String cantidad, String calle, String numero,
 			String codPostal, String poblacion, String pais, String destinatario, String fechaEntrega) {
 		super();
-		this.productos = productos;
+		this.producto = producto;
 		this.cantidad = cantidad;
-		this.direccionEntrega = direccionEntrega;
 		this.calle = calle;
 		this.numero = numero;
 		this.codPostal = codPostal;
@@ -36,12 +44,12 @@ public class Pedidos {
 
 	}
 
-	public String getProductos() {
-		return productos;
+	public String getProducto() {
+		return producto;
 	}
 
-	public void setProductos(String productos) {
-		this.productos = productos;
+	public void setProducto(String producto) {
+		this.producto = producto;
 	}
 
 	public String getCantidad() {
@@ -50,14 +58,6 @@ public class Pedidos {
 
 	public void setCantidad(String cantidad) {
 		this.cantidad = cantidad;
-	}
-
-	public String getDireccionEntrega() {
-		return direccionEntrega;
-	}
-
-	public void setDireccionEntrega(String direccionEntrega) {
-		this.direccionEntrega = direccionEntrega;
 	}
 
 	public String getCalle() {
